@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/Formalize.module.css";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import AllProducts from "../components/Formalize/AllProducts";
 
 export default function Formalize() {
   const router = useRouter();
@@ -24,6 +25,7 @@ export default function Formalize() {
             />
           </button>
         </div>
+        <AllProducts />
       </div>
     </div>
   );
