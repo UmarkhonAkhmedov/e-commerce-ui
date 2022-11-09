@@ -10,8 +10,12 @@
 
 .product__img {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 168px;
   height: 168px;
+  background-color: #f7f7f7;
 }
 
 .productImg__list {

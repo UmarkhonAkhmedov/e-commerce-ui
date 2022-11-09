@@ -1,0 +1,214 @@
+.info {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  margin: 30px 0;
+}
+
+.info__text {
+  font-weight: 500;
+  color: #bbc2d0;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.info__text span {
+  color: #00c48c;
+}
+
+.info h2 {
+  font-size: 22px;
+  margin-top: 30px;
+  line-height: 27px;
+  color: #3d639d;
+  margin-bottom: 20px;
+}
+
+.info__box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  top: -30px;
+  right: 16px;
+  background-color: #ff647c;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.info__img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f5f8;
+  width: 480px;
+  height: 380px;
+  border-radius: 16px;
+}
+
+.img__list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 27px 0 0 17px;
+}
+
+.img__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 28px;
+  background-color: #a2aedb;
+  border-radius: 6px;
+  margin: 3px;
+}
+
+.refresh {
+  background-color: #f39dbd;
+}
+
+.discount {
+  background-color: #ffbd95;
+}
+
+.discount__green {
+  background-color: #aad9ac;
+}
+
+.info__main {
+  display: flex;
+}
+
+.img__info {
+  margin: 0 30px 0 20px;
+  max-width: 480px;
+  width: 50%;
+}
+
+.img__info h5 {
+  margin: 0;
+  font-size: 16px;
+  color: #bbc2d0;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.img__info p {
+  font-size: 16px;
+  color: #262728;
+  font-weight: 700;
+}
+
+.img__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #f7f7f7;
+  margin: 20px 0;
+}
+
+.img__price__red {
+  display: flex;
+  align-items: center;
+}
+
+.img__price__red p {
+  background-color: #ff647c;
+  color: #ffffff;
+  padding: 2px 6px;
+  margin-right: 10px;
+}
+
+.img__price__red span {
+  color: #bbc2d0;
+  font-size: 14px;
+}
+
+.calculate__price {
+  display: flex;
+  margin: 16px 0px 8px 0px;
+  border-radius: 6px;
+}
+
+.calculate__price button {
+  width: 25%;
+  background-color: #ffffff;
+  border: none;
+  font-size: 15px;
+  padding: 10px 0;
+  color: #00c48c;
+  cursor: pointer;
+}
+
+.calculate__price button:active {
+  background-color: #00c48c;
+  color: #ffffff;
+}
+
+.calculate__price button:first-child {
+  border-top: 2px solid #00c48c;
+  border-bottom: 2px solid #00c48c;
+  border-left: 2px solid #00c48c;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.calculate__price button:nth-child(2) {
+  border: 2px solid #00c48c;
+}
+
+.calculate__price button:nth-child(3) {
+  border-top: 2px solid #00c48c;
+  border-bottom: 2px solid #00c48c;
+}
+
+.calculate__price button:nth-child(4) {
+  border: 2px solid #00c48c;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.info__percent {
+  color: #262728;
+  text-align: center;
+  font-weight: 500 !important;
+}
+
+.info__percent span {
+  font-weight: 700;
+}
+
+.info__feature {
+  font-weight: 500 !important;
+}
+
+.show__button {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.show__button button {
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  color: #00c48c;
+  cursor: pointer;
+}
+
+.show__other {
+  padding: 0 0px 20px 10px;
+}

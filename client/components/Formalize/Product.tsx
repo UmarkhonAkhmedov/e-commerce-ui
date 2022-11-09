@@ -29,8 +29,8 @@ export default function Product({
           <Image
             src={`/img/${img}.svg`}
             alt="Website Logo"
-            width={168}
-            height={168}
+            height={136}
+            width={136}
           />
           <div className={styles.productImg__list}>
             {prize == true && (
