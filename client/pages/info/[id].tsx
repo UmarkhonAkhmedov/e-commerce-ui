@@ -17,7 +17,7 @@ export default function ItemInfo() {
   return (
     <div className={style.formalize}>
       <p className={styles.info__text}>
-        Заявки &gt; Оформить заказ &gt; <span>{filterData[0].name}</span>
+        Заявки &gt; Оформить заказ &gt; <span>{filterData[0]?.name}</span>
       </p>
       <div className={styles.info}>
         <div className={styles.info__box}>
@@ -28,18 +28,18 @@ export default function ItemInfo() {
             height={24}
           />
         </div>
-        <h2>{filterData[0].name}</h2>
+        <h2>{filterData[0]?.name}</h2>
         <div className={styles.info__main}>
           <div className={styles.info__img}>
             <Image
               className={styles.info__img__main}
-              src={`/img/${filterData[0].img}.svg`}
+              src={`/img/${filterData[0]?.img}.svg`}
               alt="Box Red Icon"
               width={270}
               height={270}
             />
             <div className={styles.img__list}>
-              {filterData[0].prize == true && (
+              {filterData[0]?.prize == true && (
                 <div className={styles.img__item}>
                   <Image
                     src={`/img/prize__icon.svg`}
@@ -49,7 +49,7 @@ export default function ItemInfo() {
                   />
                 </div>
               )}
-              {filterData[0].discount == true && (
+              {filterData[0]?.discount == true && (
                 <div className={`${styles.img__item} ${styles.discount}`}>
                   <Image
                     src={`/img/discount__icon.svg`}
@@ -59,7 +59,7 @@ export default function ItemInfo() {
                   />
                 </div>
               )}
-              {filterData[0].refresh == true && (
+              {filterData[0]?.refresh == true && (
                 <div className={`${styles.img__item} ${styles.refresh}`}>
                   <Image
                     src={`/img/refresh__icon.svg`}
@@ -81,7 +81,7 @@ export default function ItemInfo() {
           </div>
           <div className={styles.img__info}>
             <h5>Цена телефона</h5>
-            <p>{filterData[0].price} сум</p>
+            <p>{filterData[0]?.price} сум</p>
             <div className={styles.divider}></div>
             <div className={styles.img__price}>
               <div>
@@ -133,7 +133,7 @@ export default function ItemInfo() {
         </div>
         <div className={styles.info__bottom}>
           <h3>Акции</h3>
-          {filterData[0].refresh == true && (
+          {filterData[0]?.refresh == true && (
             <>
               <Discount
                 img="refresh"
@@ -143,7 +143,7 @@ export default function ItemInfo() {
               <div className={styles.divider}></div>
             </>
           )}
-          {filterData[0].discount && (
+          {filterData[0]?.discount && (
             <>
               <Discount
                 img="prize"
@@ -153,7 +153,7 @@ export default function ItemInfo() {
               <div className={styles.divider}></div>
             </>
           )}
-          {filterData[0].discount && (
+          {filterData[0]?.discount && (
             <>
               <Discount
                 img="discount"
