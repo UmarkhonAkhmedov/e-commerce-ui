@@ -42,6 +42,16 @@ export default function Discount({ img, title, subTitle }: Props) {
             />
           </div>
         )}
+        {img === "discount" && (
+          <div className={`${styles.img__item} ${styles.discount__img}`}>
+            <Image
+              src={`/img/${img}__icon.svg`}
+              alt=""
+              width={16}
+              height={16}
+            />
+          </div>
+        )}
         <div className={styles.discount__heading}>
           <h5>{title}</h5>
           <p>{subTitle}</p>

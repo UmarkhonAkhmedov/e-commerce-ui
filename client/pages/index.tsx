@@ -1,9 +1,9 @@
-import Head from "next/head";
+import styles from "../styles/Formalize.module.css";
 
 export default function Home() {
   return (
-    <div>
-      <main>home</main>
+    <div className={styles.formalize}>
+      <main>Home</main>
     </div>
   );
 }

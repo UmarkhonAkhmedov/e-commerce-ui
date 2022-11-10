@@ -127,18 +127,37 @@ export default function ItemInfo() {
         </div>
         <div className={styles.info__bottom}>
           <h3>Акции</h3>
-          <Discount
-            img="refresh"
-            title="Обменяй свой старый айфон и получи скидку на новый"
-            subTitle="- 400 000 сум"
-          />
-          <div className={styles.divider}></div>
-          <Discount
-            img="prize"
-            title="Наушники в подарок"
-            subTitle="Apple EarPods"
-          />
-          <div className={styles.divider}></div>
+          {filterData[0].refresh == true && (
+            <>
+              <Discount
+                img="refresh"
+                title="Обменяй свой старый айфон и получи скидку на новый"
+                subTitle="- 400 000 сум"
+              />
+              <div className={styles.divider}></div>
+            </>
+          )}
+          {filterData[0].discount && (
+            <>
+              <Discount
+                img="prize"
+                title="Наушники в подарок"
+                subTitle="Apple EarPods"
+              />
+              <div className={styles.divider}></div>
+            </>
+          )}
+          {filterData[0].discount && (
+            <>
+              <Discount
+                img="discount"
+                title="Скидка 20% на смартфоны"
+                subTitle="-10 000 сум"
+              />
+              <div className={styles.divider}></div>
+            </>
+          )}
+
           <Discount
             img="discount__green"
             title="Скидка на айфоны"
