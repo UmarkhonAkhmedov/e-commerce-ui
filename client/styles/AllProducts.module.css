@@ -9,15 +9,9 @@
 }
 
 .allProducts__list {
-  display: grid;
+  display: flex;
   flex-wrap: wrap;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  column-gap: 20px;
-  row-gap: 20px;
-}
-
-@media screen and (max-width: 1366px) {
-  .allProducts__list {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+  justify-content: space-around;
+  column-gap: 10px;
+  row-gap: 15px;
 }

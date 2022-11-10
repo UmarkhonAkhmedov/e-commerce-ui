@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 168px;
+  width: 100%;
   height: 168px;
   background-color: #f7f7f7;
 }
@@ -84,4 +84,10 @@
   font-size: 11px;
   color: #bbc2d0;
   margin-left: 6px;
+}
+
+@media screen and (max-width: 425px) {
+  .product {
+    width: 220px;
+  }
 }
