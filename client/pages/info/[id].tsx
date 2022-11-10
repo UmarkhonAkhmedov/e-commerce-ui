@@ -98,7 +98,7 @@ export default function ItemInfo() {
                 <button
                   key={index}
                   onClick={() => setNum(index)}
-                  className={index === num && styles.active__button}
+                  className={index === num ? styles.active__button : ""}
                 >
                   {(index + 1) * 3} мес
                 </button>

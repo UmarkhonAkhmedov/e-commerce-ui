@@ -55,7 +55,9 @@ export default function AllProducts() {
         <div className={styles.pagination__list}>
           {[...Array(data.length / 10)].map((item: any, index: number) => (
             <p
-              className={index === page / 10 - 1 && styles.pagination__active}
+              className={
+                index === page / 10 - 1 ? styles.pagination__active : ""
+              }
               key={index}
               onClick={() => {
                 setLoading(true);
