@@ -1,0 +1,85 @@
+.discount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.discount__info {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.img__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 28px;
+  background-color: #a2aedb;
+  border-radius: 6px;
+  margin: 3px;
+}
+
+.refresh {
+  background-color: #f39dbd;
+}
+
+.discount__img {
+  background-color: #ffbd95;
+}
+
+.discount__green {
+  background-color: #aad9ac;
+}
+
+.discount__heading {
+  margin: 0 16px;
+}
+
+.discount__heading h5 {
+  margin: 0;
+  color: #262728;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.discount__heading p {
+  color: #bbc2d0;
+}
+
+.discount input[type="checkbox"] {
+  background-color: #00c48c !important;
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+  accent-color: #00c48c;
+  border: 1px solid #bbc2d0;
+  border-radius: 6px;
+}
+
+.discount input:checked:before {
+  background-color: green;
+}
+
+@media screen and (max-width: 768px) {
+  .discount__heading {
+    width: 80%;
+    margin: 0 8px;
+  }
+  .discount__heading h5 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .discount input[type="checkbox"] {
+    background-color: #00c48c !important;
+    width: 18px;
+    height: 18px;
+    color: #ffffff;
+    accent-color: #00c48c;
+    border: 1px solid #bbc2d0;
+    border-radius: 6px;
+  }
+}
