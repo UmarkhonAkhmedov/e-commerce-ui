@@ -102,3 +102,17 @@
     margin-top: 4px;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .main__user {
+    padding: 12px 20px 12px 10px;
+  }
+  .main__notification {
+    margin: 2px 15px 0 0;
+  }
+  .main__user span {
+    font-size: 14px;
+    margin-right: 8px;
+    margin-top: 4px;
+  }
+}

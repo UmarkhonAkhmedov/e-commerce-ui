@@ -152,9 +152,9 @@
   cursor: pointer;
 }
 
-.calculate__price button:active {
-  background-color: #00c48c;
-  color: #ffffff;
+.active__button {
+  background-color: #00c48c !important;
+  color: #ffffff !important;
 }
 
 .calculate__price button:first-child {
@@ -246,9 +246,16 @@
     width: 48%;
     margin-top: 20px;
   }
+  .img__price {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .img__price__red {
+    margin-top: 5px;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 830px) {
   .info__main {
     flex-direction: column;
   }
@@ -259,6 +266,13 @@
   }
   .info__img {
     width: 100%;
+  }
+  .img__price {
+    align-items: center;
+    flex-direction: row;
+  }
+  .img__price__red {
+    margin-top: 0px;
   }
 }
 
@@ -292,5 +306,12 @@
   }
   .info__submit {
     padding: 12px 0 12px 0;
+  }
+  .img__price {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .img__price__red {
+    margin-top: 5px;
   }
 }

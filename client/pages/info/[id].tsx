@@ -9,6 +9,7 @@ import Link from "next/link";
 
 export default function ItemInfo() {
   const [show, setShow] = useState(false);
+  const [num, setNum] = useState(0);
   const router = useRouter();
   const { id } = router.query;
   const filterData = dummyData.filter((item: any) => item.id == id);
@@ -85,18 +86,23 @@ export default function ItemInfo() {
             <div className={styles.img__price}>
               <div>
                 <h5>Общая цена (с наценкой)</h5>
-                <p>7 300 000 сум </p>
+                <p>8 000 000 сум </p>
               </div>
               <div className={styles.img__price__red}>
-                <p>2 433 333 сум</p>
+                <p>2 666 666 сум</p>
                 <span>x3</span>
               </div>
             </div>
             <div className={styles.calculate__price}>
-              <button>3 мес</button>
-              <button>6 мес</button>
-              <button>12 мес</button>
-              <button>24 мес</button>
+              {[...Array(4)].map((item: any, index: number) => (
+                <button
+                  key={index}
+                  onClick={() => setNum(index)}
+                  className={index === num && styles.active__button}
+                >
+                  {(index + 1) * 3} мес
+                </button>
+              ))}
             </div>
             <p className={styles.info__percent}>
               Наценка: <span>5%</span>

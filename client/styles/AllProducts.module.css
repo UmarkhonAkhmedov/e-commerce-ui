@@ -15,3 +15,48 @@
   column-gap: 10px;
   row-gap: 15px;
 }
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 10px 0;
+}
+
+.pagination img {
+  cursor: pointer;
+}
+
+.pagination__list {
+  display: flex;
+  align-items: center;
+}
+
+.pagination__list p {
+  font-size: 16px;
+  font: 500;
+  padding: 8px 13px;
+  cursor: pointer;
+  color: #262728;
+}
+
+.pagination__active {
+  background-color: #00c48c;
+  color: #ffffff !important;
+  border-radius: 10px !important;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  height: 85vh;
+  color: #00c48c;
+}
+
+@media screen and (max-width: 425px) {
+  .pagination img {
+    cursor: pointer;
+    margin-top: 5px;
+  }
+}
