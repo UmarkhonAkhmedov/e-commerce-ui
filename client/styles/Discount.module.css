@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #ffffff;
 }
 
 .discount__info {
@@ -53,6 +54,7 @@
   width: 24px;
   height: 24px;
   color: #ffffff;
+  background-color: #ffffff;
   accent-color: #00c48c;
   border: 1px solid #bbc2d0;
   border-radius: 6px;

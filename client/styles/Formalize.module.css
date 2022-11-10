@@ -5,6 +5,10 @@
   border-radius: 6px;
 }
 
+.formalize main {
+  color: #262728;
+}
+
 .formalize__header p {
   font-weight: 500;
   color: #bbc2d0;
@@ -38,6 +42,7 @@
   border-bottom-left-radius: 26px;
   border-top-left-radius: 26px;
   padding: 0 20px;
+  background-color: #ffffff;
 }
 
 .formalize__search input::placeholder {
